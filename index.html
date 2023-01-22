@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>I'm Isha</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+<div class="top">
+  <img class = "cloud1" src="images/cloud.png" alt="">
+  <img class = "cloud3" src="images/cloud.png" alt="">
+  <h1>I'm Isha</h1>
+  <div class = "introduction"><p> <h3>
+    A student studying at the University of St. Thomas majoring in Neuroscience and minoring in Statistics and Computer Science. I am graduating in December 2023. From the first few classes I took at the UST, I fell in love with Computer Science and Statistics. I realized that data is everywhere and can help explain a lot about the world and its inhabitants. Computer Science has become a gateway for me to express myself. Everything that I have learned so far has given me tools to create something new and has given me the independence to explore not only new topics, but also new ways to become better and create something more efficient. Therefore, I am passionate about exploring new topics in both Statistics and Computer Science as well as unlocking the capabilities of everything I have learned so far and the numerous places where it can be applied. My background in Neuroscience has helped me develop an intuition in solving problems and has helped me understand a large spectrum of data related to Biology and Chemistry. Neuroscience has taught me the scientific approach and has equipped me with critical thinking skills that are universally essential. Furthermore, having studied Neuroscience, I have learned to search for, understand. and write scientific literature which is a skill that has become crucial in all fields. My aim is to attain a better understanding of data analysis tools, gain experience, and learn from experts working in the field.
+  </div>
+  </p></h3>
+  <img class = "mountain" src="images/mountain.png" alt="">
+  <img class = "cloud2" src="images/cloud.png" alt="">
+</div>
+<div class="javascript">
+    <h4 class= "statement"> Press either of these buttons to see the output</h4>  </div>
+    <button onclick="alpha1()">Button-1</button>
+  	<button onclick="alpha2()">Button-2</button>
+  	<button onclick="alpha3()">Button-3</button>
+  	<button onclick="alpha4()">Button-4</button></li>
+
+  	<div class = "javascriptoutput" id="output">
+</div>
+<script>
+
+		const output = document.querySelector("#output")
+
+    function alpha1() {
+			output.innerHTML = "";
+			var a;
+			while (a != 14) {
+				for (a = 0; a < 4; a++) {
+
+					output.innerHTML += "* ";
+				}
+					output.innerHTML += "<br>";
+				for (a = 4; a < 10; a++) {
+					output.innerHTML += "&nbsp;*      ";
+					output.innerHTML += "<br>";
+				}
+				for (a = 10; a < 14; a++) {
+					output.innerHTML += "* ";
+				}
+			}
+		}
+
+
+    function alpha2() {
+		output.innerHTML = "";
+		var d = 0;
+
+				while(d != 14){
+          output.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+					for(d = 0 ; d<3 ; d++){
+						output.innerHTML += "* ";
+					}
+
+					for(d = 3; d<5 ; d++){
+						output.innerHTML += "*";
+						output.innerHTML += "<br>";
+					}
+          output.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+					for(d = 5 ; d<9 ; d++){
+						output.innerHTML += "* ";
+					}
+				  	output.innerHTML += "<br>";
+            output.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+					for(d = 9; d<10 ; d++){
+						output.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*";
+						output.innerHTML += "<br>";
+					}
+            output.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+					for(d = 10; d<14 ; d++){
+						output.innerHTML += "* ";
+					}
+				}
+		}
+		function alpha3() {
+		output.innerHTML = "";
+			var h;
+
+				while(h != 13){
+					for(h = 0; h<4 ; h++){
+						output.innerHTML += "*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*";
+						output.innerHTML += "<br>";
+					}
+					for(h = 4 ; h<9 ; h++){
+						output.innerHTML +="* ";
+
+					}
+					output.innerHTML +="<br>";
+					for(h = 9 ; h < 13 ; h++){
+						output.innerHTML += "*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*";
+						output.innerHTML +="<br>";
+					}
+				}
+
+		}
+		function alpha4() {
+		output.innerHTML = "";
+		      var j;
+
+				while(j != 18){
+					for(j = 0; j < 5; j++){
+					output.innerHTML +="* ";
+					}
+					output.innerHTML +="<br>";
+					for(j = 5; j<8; j++){
+					output.innerHTML += "*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*";
+					output.innerHTML +="<br>";
+					}
+					for(j = 8; j<13; j++){
+					output.innerHTML +="* ";
+					}
+					output.innerHTML +="<br>";
+					for(j = 14; j<18; j++){
+					output.innerHTML += "*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*";
+					output.innerHTML +="<br>";
+					}
+				}
+		}
+
+    </script>
+<div class=" Program">
+  <img class= "CISC" src="images/Computer Science.jpg" alt="">
+  <h2 class = "programmer"> <a href = "ComputerScience.html">A programmer</a></h2>
+  <img class = "NSCI" src="images/Neuroscience.jpg" alt="">
+  <h2 class = "Neuroscience"> <a href = "NeuroScience.html">A Neuroscience Student</a></h2>
+  <img class = " Statistics" src="images/Statistics.jpg" alt="">
+  <h2 class = "Stat"> <a href = "Statistics.html">A Statistics Student</a></h2>
+</div>
+  </body>
+</html>

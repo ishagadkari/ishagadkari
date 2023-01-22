@@ -1,0 +1,105 @@
+
+body{
+  padding-top: 0;
+  text-align: center;
+  margin: 0;
+  background-color: #191919;
+}
+
+.top{
+background-color: #041C32;
+position: relative;
+margin:0;
+padding-bottom: 200px;
+}
+h1{
+  top: 150px;
+  color: white;
+  font-style: oblique;
+  position: relative;
+}
+h3{
+  color: white;
+  font-style: oblique;
+  position: relative;
+  top: 160px;
+}
+.cloud1{
+  top: 100px;
+  position: relative;
+  right: 250px;
+}
+.mountain{
+  top: 170px;
+  left: 30px;
+  position: relative;
+}
+.cloud2{
+  top: 200px;
+  position: absolute;
+
+}
+.cloud3{
+  top: 400px;
+  left: 45px;
+  position: absolute;
+}
+
+.Program{
+top:900px;
+}
+.pageCompSci{
+width: 300px;
+}
+.CISC{
+  height: 300px;
+  width: 400px;
+  top: 900px;
+  margin-top: 100px;
+}
+
+.NSCI{
+  height: 300px;
+  width: 400px;
+  top: 300px;
+  margin-top: 100px;
+}
+
+.Statistics{
+  height: 300px;
+  width: 400px;
+  top: 500px;
+  margin-top: 100px;
+}
+.introduction{
+  padding-left: 200px;
+  padding-right : 200px;
+}
+
+h2{
+  color: white;
+  top: 900px;
+}
+.programmer{
+  padding-top: 10px;
+}
+.Neuroscience{
+    padding-top: 10px;
+}
+.Stat{
+  padding-top: 10px;
+}
+.note{
+  color: white;
+}
+.javascriptoutput{
+  top: 200px;
+  color: white;
+  margin-top:20px;
+}
+.javascript{
+  top: 0;
+  color: white;
+  font-style: oblique;
+  position: relative;
+}
