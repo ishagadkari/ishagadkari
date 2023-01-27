@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Statistics</title>
+    <link rel="stylesheet" href="css/Statistics.css">
+  </head>
+  <body class = "body">
+    <h1 class = "Stat">Statistics</h1>
+    <div class="Model1">
+    <br>
+    <br>
+
+    <h2>General Social Survey : highest_year_of_school_completed</h2>
+    <br>
+    <br>
+    <h3>About the data</h3><br>
+    <p>GSS stands for General Social Survey. It was conducted by the University of Chicago. It studies trends in the lives of Americans since the year 1972. The data cleaning has been conducted by Dr. Amelia McNamara, at the University of St. Thomas.</p>
+    <br>
+
+    <h3>About the Variables:</h3>
+    <p>
+      I am going to predict the highest_year_of_school_completed. <br>
+      Previous studies on the influence of College Education on Parents and Children in Low-income Families used four different groups (1). The first group was college-educated parents with low-income, college-educated parents with high income, less educated parents with low income, and less educated parents with high income (1). It was found that children who belonged to low-income families but had parents who were college educated scored better on achievement tests as compared to children who belonged to low-income families and did not have parents that were college educated and children who belonged to high income families but did not have parents that were college educated (1). <br>
+      Therefore, parents' education level seems to be related to the children's education level which is why I chose the variables highest_year_school_completed_father, and highest_year_school_completed_mother.<br>
+      A study on Number of Siblings and Educational Attainment showed that the relation between number of siblings and the educational attainment of an individual is negative, at least in terms of verbal ability(4). Therefore, I chose the variable number_of_brothers_and_sisters.<br>
+      In a study to assess the Literacy levels in the United States, it was found that US born adults made up 2/3rds of adults with low levels of literacy when it comes to English skills in the United States (2). On the other hand, non-US born comprised of 34% when it comes to low literacy skills of the population (2). In conclusion, those born in the US are likely to have low literacy as compared to those born outside the US(2).<br>
+      Therefore, I chose the variable born_in_us as a variable to predict highest_year_of_school_completed.<br>
+      In a study conducted in the US, it was found that around 62% of US adults who are aged 25 years and older do not have a four-year college degree (3). Furthermore, the study also states that women are more likely than men to complete their 4-year college degree in the US(3).<br>
+      Therefore, I chose the variables age_of_respondents and respondents_sex to predict highest_year_of_school_completed.<br>
+      In conclusion, these are all the variables I am using to predict highest_year_of_school_completed:<br>
+      <ol>
+        <li>highest_year_school_completed_father</li>
+        <li>highest_year_school_completed_mother</li>
+        <li>born_in_us</li>
+        <li>age_of_respondent</li>
+        <li>number_of_brothers_and_sisters</li>
+        <li>respondents_sex</li>
+      </ol>
+    </p><h3><u>Here is the link to the dataset and the data analysis:</u> <a href="https://github.com/ishagadkari/GSS_MLR.git"> Multiple_Linear_Regression_GSS</a></h3></p>
+    <h3>Results</h3>
+    <p>
+      The variables that were found to be significant predictors of highest_year_of_school_completed were found to be: <br>
+      <ol>
+        <li>highest_year_school_completed_father</li>
+        <li>number_of_brothers_and_sisters</li>
+        <li>age_numeric</li>
+      </ol>
+      <br>
+      The model explained 22.57% of the variability in highest_year_of_school_completed which even though is not a lot of variability being explained, considering that the response variable chosen is in general a very broad term likely to be influenced by many individual life factors, I would consider 22.57% to be a relatively high amount of variability being explained by the model. <br>
+      The equation was found to be:
+      <br>
+      ŷ = 9.25334 + 0.15343(highest_year_school_completed_mother) - 0.12340 (number_of_brothers_and_sisters ) + 0.20069 (highest_year_school_completed_father) + 0.02315(age_numeric). <br>
+      where ŷ is highest_year_of_school_completed hat or the predicted value of highest_year_of_school_completed.<br>
+      The results as seen from the equation do align with the previous studies conducted on these variables.<br>
+      The highest year of school completed by both mothers and fathers has a positive relationship with the highest year of school completed by the individual thereby affirming previous studies (1)  that predict that the more educated the parents are, the greater education their child is likely to seek.<br>
+      The increase in number of brothers and sisters seems negatively influence the highest year of school completed by the individual. This affirms the study conducted on number of siblings and educational attainment (4).<br>
+      However, increase in age is shown to increase the number of years of school completed by the individual which does not align with the conclusions of the PEW studies. The age of the respondents in this dataset ranges between 18 to 89 and there are a total of 130 individuals with age under 25 years, and since the coefficient for the variable age_numeric is positive, it does not agree with the findings of the PEW which states that age and completion of college degree should have an inverse association. <br>
+      <br>
+    </p>
+    <h3>Conditions for Inference: </h3><br>
+
+      <ol>
+        <li><u>Equality of Variance and Linearity</u></li>
+        <p>There seems to be a slight curve in the red line showing that linearity is perhaps not as ideal as we would like. Linearity is not met. <br>
+        Equality of Variance does seem to be met, there seems to be a fairly equal band of residuals on either side of the dotted line. <br></p>
+        <li><u>Normality:</u>
+        </li>
+        <p>The QQ plot does show a slight deviation towards the end. Normality is not met.</p>
+        <li><u>Independence:</u></li>
+        <p>I believe the independence condition should be met. Unless the individuals whose data we possess are siblings, data of one row should not depend on the other. <br>
+        In conclusion, since all the conditions for inference are not met, we cannot use this model to predict highest_year_of_school_completed using all the variables that were used in the model. To build a better model to predict the response variable, multicollinearity between the existing explanatory variables could be checked and new variables that might also be significant predictors of the response variable can be added. <br></p>
+      </ol>
+      <br>
+      <br>
+      <h3>Citations: <br></h3>
+      <ol>
+        <li>Tighe, L. A., & Davis-Kean, P. (2019). The influence of college education on children and parents in low-income families. https://doi.org/10.31234/osf.io/wa8ze</li><br>
+        <li>Adult Literacy in the United States. Adult literacy in the United States. (n.d.). Retrieved January 8, 2023, from https://nces.ed.gov/pubs2019/2019179/index.asp</li><br>
+        <li>Parker, K. (2021, November 8). What's behind the growing gap between men and women in college completion? Pew Research Center. Retrieved January 8, 2023, from https://www.pewresearch.org/fact-tank/2021/11/08/whats-behind-the-growing-gap-between-men-and-women-in-college-completion/</li><br>
+        <li>(4) Blake, J. (1989). Number of siblings and educational attainment. Science, 245(4913), 32–36. https://doi.org/10.1126/science.2740913</li><br>
+      </ol>
+
+    </div>
+  </body>
+</html>

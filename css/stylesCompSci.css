@@ -1,36 +1,14 @@
 .pageCompSci{
   text-align: center;
 }
-.RoomWinner1{
-  height: 450px;
-  top: 27px;
-  position: relative;
-  left: 115px;
-}
-.RoomWinner2{
-  height: 450px;
-  top: 27px;
-  position: relative;
-  left: 115px;
 
-}
-.Question1{
- padding-top: 25px;
- padding-bottom: 75px;
- font-size: 20px;
-}
-.RoomWinnerexplanation{
-  padding-top: 25px;
-  padding-bottom: 75px;
+.HopsitalManagementInfo{
   font-size: 20px;
 }
-.RoomWinnerCode{
-background-color: #3F4E4F;
-height: 930px;
-position: relative;
-padding-bottom: 20px;
-
+.FeaturesHMS_detail{
+  font-size: 20px;
 }
+
 .pageCompSci{
   padding-bottom: 30px;
   padding-top: 30px;
